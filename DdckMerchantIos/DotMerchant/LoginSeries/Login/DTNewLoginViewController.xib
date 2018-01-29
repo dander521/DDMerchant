@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DTNewLoginViewController">
+            <connections>
+                <outlet property="tableView" destination="p74-qz-4Pl" id="Z4M-pv-F4q"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="p74-qz-4Pl">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="mhC-D2-dy0"/>
+                        <outlet property="delegate" destination="-1" id="LsJ-MC-vQ8"/>
+                    </connections>
+                </tableView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fanhui_baise" translatesAutoresizingMaskIntoConstraints="NO" id="r1P-lF-x3E">
+                    <rect key="frame" x="16" y="31" width="10" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="10" id="MJ5-Gv-K1U"/>
+                        <constraint firstAttribute="height" constant="20" id="xN0-Xx-lRD"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tVZ-tq-poz">
+                    <rect key="frame" x="10" y="20" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="I4M-zz-bDF"/>
+                        <constraint firstAttribute="width" constant="50" id="iOj-h4-RWl"/>
+                    </constraints>
+                    <connections>
+                        <action selector="touchBackBtn:" destination="-1" eventType="touchUpInside" id="0fR-td-SVZ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="p74-qz-4Pl" secondAttribute="bottom" id="0ge-ru-cLA"/>
+                <constraint firstItem="p74-qz-4Pl" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="0xm-UA-An3"/>
+                <constraint firstItem="tVZ-tq-poz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="6yJ-mQ-R0D"/>
+                <constraint firstItem="p74-qz-4Pl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Xqa-x4-HQR"/>
+                <constraint firstItem="tVZ-tq-poz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="eI0-qG-WtA"/>
+                <constraint firstItem="r1P-lF-x3E" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="pVn-Ki-hfq"/>
+                <constraint firstItem="r1P-lF-x3E" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="31" id="wxY-pM-3Z0"/>
+                <constraint firstAttribute="trailing" secondItem="p74-qz-4Pl" secondAttribute="trailing" id="ywW-Fp-2XK"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="fanhui_baise" width="10" height="18"/>
+    </resources>
+</document>

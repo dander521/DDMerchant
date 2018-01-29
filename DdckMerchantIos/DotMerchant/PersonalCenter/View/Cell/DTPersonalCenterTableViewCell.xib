@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" id="KGk-i7-Jjw" customClass="DTPersonalCenterTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="54"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="286" height="53.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UrD-5t-pHh">
+                        <rect key="frame" x="15" y="15" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="79t-m3-Ade"/>
+                            <constraint firstAttribute="height" constant="24" id="rec-WS-sZa"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ovL-L6-RUU">
+                        <rect key="frame" x="55" y="18.5" width="223" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="UrD-5t-pHh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Rek-UJ-SLo"/>
+                    <constraint firstItem="ovL-L6-RUU" firstAttribute="centerY" secondItem="UrD-5t-pHh" secondAttribute="centerY" id="Uz7-7b-8x6"/>
+                    <constraint firstItem="ovL-L6-RUU" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="bDt-pH-PgA"/>
+                    <constraint firstItem="UrD-5t-pHh" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="lJb-yJ-xHb"/>
+                    <constraint firstItem="ovL-L6-RUU" firstAttribute="leading" secondItem="UrD-5t-pHh" secondAttribute="trailing" constant="16" id="uND-ot-GZH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconImageView" destination="UrD-5t-pHh" id="7X1-TG-94k"/>
+                <outlet property="titleLabel" destination="ovL-L6-RUU" id="DsW-we-IhF"/>
+            </connections>
+            <point key="canvasLocation" x="-125" y="60"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DTEmployeeViewController">
+            <connections>
+                <outlet property="tableView" destination="8Sa-ec-8Jc" id="y8X-K1-OcA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8Sa-ec-8Jc">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="ctc-37-WCX"/>
+                        <outlet property="delegate" destination="-1" id="Wzg-9M-MJ7"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="8Sa-ec-8Jc" secondAttribute="bottom" id="FYN-jz-Njd"/>
+                <constraint firstItem="8Sa-ec-8Jc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="k4k-eH-J4O"/>
+                <constraint firstAttribute="trailing" secondItem="8Sa-ec-8Jc" secondAttribute="trailing" id="pQr-Kl-C6l"/>
+                <constraint firstItem="8Sa-ec-8Jc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="zCd-0y-5yf"/>
+            </constraints>
+            <point key="canvasLocation" x="21" y="84"/>
+        </view>
+    </objects>
+</document>

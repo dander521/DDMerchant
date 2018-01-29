@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="DTGoodsTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="118"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="117.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_success" translatesAutoresizingMaskIntoConstraints="NO" id="L4o-OQ-gRI">
+                        <rect key="frame" x="12" y="18" width="68" height="68"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="68" id="1j7-C3-6Ib"/>
+                            <constraint firstAttribute="width" constant="68" id="YnT-uk-rLJ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="一个主菜加两个配菜" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Go8-bw-Fti">
+                        <rect key="frame" x="97" y="48" width="173" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="1Xg-gQ-dti"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.79607843137254897" green="0.79607843137254897" blue="0.79607843137254897" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥33.4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6pP-VC-Wdh">
+                        <rect key="frame" x="97" y="77" width="55" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="rdS-uW-cJU"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.96470588239999999" green="0.1176470588" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="红烧排骨套餐" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7O2-5w-KjU">
+                        <rect key="frame" x="97" y="21" width="165" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="6MR-FR-g8G"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQB-Lr-lez">
+                        <rect key="frame" x="160" y="75" width="70" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="26" id="0dX-MG-k08"/>
+                            <constraint firstAttribute="width" constant="70" id="jtG-Ys-2Z7"/>
+                        </constraints>
+                        <state key="normal" title="编辑">
+                            <color key="titleColor" red="0.96470588239999999" green="0.1176470588" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="13"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="touchEditBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="xvP-et-800"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8G8-8K-fbV">
+                        <rect key="frame" x="238" y="75" width="70" height="26"/>
+                        <color key="backgroundColor" red="0.96470588235294119" green="0.11764705882352941" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="26" id="dc7-Di-ZkK"/>
+                            <constraint firstAttribute="width" constant="70" id="hAO-6I-4xT"/>
+                        </constraints>
+                        <state key="normal" title="下架">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="13"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="touchActionBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="GRf-6J-GeY"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4U2-EH-bKk">
+                        <rect key="frame" x="270" y="11" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="K3Y-X5-reJ"/>
+                            <constraint firstAttribute="height" constant="30" id="YjM-2v-CZ5"/>
+                        </constraints>
+                        <state key="normal" image="ic_delete"/>
+                        <connections>
+                            <action selector="touchDeleteBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="biX-HB-q2K"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="4U2-EH-bKk" firstAttribute="leading" secondItem="7O2-5w-KjU" secondAttribute="trailing" constant="8" id="9cx-QU-ww3"/>
+                    <constraint firstAttribute="bottom" secondItem="AQB-Lr-lez" secondAttribute="bottom" constant="16" id="B42-Fj-EDc"/>
+                    <constraint firstItem="7O2-5w-KjU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="21" id="GnC-TJ-pHA"/>
+                    <constraint firstItem="AQB-Lr-lez" firstAttribute="leading" secondItem="6pP-VC-Wdh" secondAttribute="trailing" constant="8" id="Icc-Kb-Icn"/>
+                    <constraint firstItem="L4o-OQ-gRI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="Kia-Xi-5Fa"/>
+                    <constraint firstItem="4U2-EH-bKk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Kyp-PK-MND"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="4U2-EH-bKk" secondAttribute="trailing" constant="4" id="Lbc-ag-BMN"/>
+                    <constraint firstItem="6pP-VC-Wdh" firstAttribute="leading" secondItem="L4o-OQ-gRI" secondAttribute="trailing" constant="17" id="SOK-Be-KGm"/>
+                    <constraint firstAttribute="bottom" secondItem="8G8-8K-fbV" secondAttribute="bottom" constant="16" id="VBt-U3-ej7"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Go8-bw-Fti" secondAttribute="trailing" constant="34" id="VCe-7S-cf4"/>
+                    <constraint firstItem="8G8-8K-fbV" firstAttribute="leading" secondItem="AQB-Lr-lez" secondAttribute="trailing" constant="8" id="YBx-Rd-Yd8"/>
+                    <constraint firstItem="7O2-5w-KjU" firstAttribute="leading" secondItem="L4o-OQ-gRI" secondAttribute="trailing" constant="17" id="Znc-QU-dRG"/>
+                    <constraint firstItem="Go8-bw-Fti" firstAttribute="top" secondItem="7O2-5w-KjU" secondAttribute="bottom" constant="6" id="eya-KG-FZl"/>
+                    <constraint firstItem="L4o-OQ-gRI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="gJG-Ux-vgK"/>
+                    <constraint firstItem="6pP-VC-Wdh" firstAttribute="top" secondItem="Go8-bw-Fti" secondAttribute="bottom" constant="8" id="gry-61-wdt"/>
+                    <constraint firstAttribute="trailing" secondItem="8G8-8K-fbV" secondAttribute="trailing" constant="12" id="mGO-Xo-22X"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="4U2-EH-bKk" secondAttribute="trailing" constant="4" id="oNm-Ui-HdV"/>
+                    <constraint firstItem="Go8-bw-Fti" firstAttribute="leading" secondItem="L4o-OQ-gRI" secondAttribute="trailing" constant="17" id="u9b-r6-auP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="actionBtn" destination="8G8-8K-fbV" id="Ant-1s-fXO"/>
+                <outlet property="deleteBtn" destination="4U2-EH-bKk" id="sTg-rP-rWg"/>
+                <outlet property="editBtn" destination="AQB-Lr-lez" id="405-zI-BUU"/>
+                <outlet property="goodNameLabel" destination="7O2-5w-KjU" id="Ne5-dN-geR"/>
+                <outlet property="goodsDesLabel" destination="Go8-bw-Fti" id="MKd-Kr-uYx"/>
+                <outlet property="goodsImageView" destination="L4o-OQ-gRI" id="sDv-mn-Nu4"/>
+                <outlet property="goodsPriceLabel" destination="6pP-VC-Wdh" id="A2P-SF-QZB"/>
+            </connections>
+            <point key="canvasLocation" x="-584" y="43"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_delete" width="15" height="15"/>
+        <image name="img_success" width="88" height="88"/>
+    </resources>
+</document>

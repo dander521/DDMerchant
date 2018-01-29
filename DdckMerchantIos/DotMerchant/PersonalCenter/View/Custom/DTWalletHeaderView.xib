@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DTWalletHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="170"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_my_wallet" translatesAutoresizingMaskIntoConstraints="NO" id="aj5-0t-8BS">
+                    <rect key="frame" x="157" y="18" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="3f8-h8-9XE"/>
+                        <constraint firstAttribute="height" constant="60" id="4s1-MJ-bpd"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥ 8797" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nCO-xm-VWF">
+                    <rect key="frame" x="0.0" y="126" width="375" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" red="1" green="0.5725490196078431" blue="0.074509803921568626" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前可用余额" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vy5-z8-y63">
+                    <rect key="frame" x="0.0" y="93" width="375" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Vy5-z8-y63" firstAttribute="top" secondItem="aj5-0t-8BS" secondAttribute="bottom" constant="15" id="3AT-RF-ZtR"/>
+                <constraint firstAttribute="trailing" secondItem="nCO-xm-VWF" secondAttribute="trailing" id="IJl-4e-VAW"/>
+                <constraint firstItem="aj5-0t-8BS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="18" id="STR-cA-520"/>
+                <constraint firstItem="aj5-0t-8BS" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="SVs-XY-XJW"/>
+                <constraint firstItem="nCO-xm-VWF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ShA-vr-fLT"/>
+                <constraint firstItem="Vy5-z8-y63" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="TwL-V3-tjz"/>
+                <constraint firstAttribute="bottom" secondItem="nCO-xm-VWF" secondAttribute="bottom" constant="20" id="jLC-X2-sSp"/>
+                <constraint firstAttribute="trailing" secondItem="Vy5-z8-y63" secondAttribute="trailing" id="yD1-P9-MKf"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="priceLabel" destination="nCO-xm-VWF" id="3qM-6C-hbo"/>
+            </connections>
+            <point key="canvasLocation" x="-337" y="22"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_my_wallet" width="50" height="50"/>
+    </resources>
+</document>
